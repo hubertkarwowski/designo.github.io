@@ -1,0 +1,95 @@
+@use "../util/" as *;
+
+.container {
+  @include breakpoints("medium") {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+.hero {
+  border-radius: rem(15);
+  width: 100%;
+  padding: rem(30) 0;
+  text-align: center;
+  background-color: $peach;
+  background-image: url("../../../assets/home/desktop/bg-pattern-hero-home.svg");
+}
+.wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 20% auto;
+  color: $white;
+  @include breakpoints("large") {
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+  }
+  h2 {
+    font-size: rem(32);
+    letter-spacing: 0;
+    line-height: rem(36);
+  }
+  .hero-phone {
+    background-image: url("../../../assets/home/desktop/image-hero-phone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    min-height: rem(560);
+    margin-bottom: -25%;
+    @include breakpoints("large") {
+      margin: 0 auto;
+      background-position: center center;
+      min-height: rem(700);
+    }
+  }
+}
+.cards {
+  width: 90%;
+  margin: rem(80) auto;
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+}
+
+.values {
+  width: 95%;
+  margin: 0 auto;
+  padding: rem(40) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: rem(60);
+  @include breakpoints("large") {
+    flex-direction: row;
+  }
+  .value {
+    display: flex;
+    flex-direction: column;
+    .image {
+      background-color: $lightgrey;
+      border-radius: 50%;
+    }
+    @include breakpoints("medium") {
+      flex-direction: row;
+      gap: rem(40);
+      text-align: left;
+    }
+    @include breakpoints("large") {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .text {
+    h3 {
+      margin: rem(20) 0;
+    }
+  }
+}

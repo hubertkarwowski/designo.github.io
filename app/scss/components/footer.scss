@@ -1,0 +1,81 @@
+@use "../util/" as *;
+
+footer {
+  margin-top: rem(250);
+  position: relative;
+  padding: rem(40) 0;
+  padding-top: rem(150);
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  .logo {
+    margin: 0 auto;
+    img {
+      height: 27px;
+    }
+  }
+  .card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -20%;
+    left: 5%;
+    background-image: url("../../../assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-size: cover;
+    background-position: center;
+    background-color: $peach;
+    border-radius: rem(15);
+    width: 90%;
+    padding: rem(40);
+    text-align: center;
+    color: $white;
+    .heading {
+      font-size: rem(32);
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: rem(20);
+      margin-bottom: rem(20);
+      @include breakpoints("large") {
+        width: 50%;
+      }
+    }
+    @include breakpoints("large") {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+  }
+  .line {
+    height: rem(2);
+    width: 90%;
+    margin: 0 auto;
+    background-color: $darkgrey;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $lightgrey;
+  }
+  .navigation {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: rem(10);
+      a {
+        color: $white;
+      }
+    }
+  }
+  .icons ul {
+    display: flex;
+    flex-direction: row;
+    gap: rem(20);
+  }
+}

@@ -1,0 +1,67 @@
+@use "../util/" as *;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: rem(20);
+  margin: 0 5%;
+  @include breakpoints("large") {
+    margin: 0 10%;
+  }
+
+  nav {
+    display: none;
+    @include breakpoints("medium") {
+      display: inline-block;
+      ul {
+        display: flex;
+        gap: rem(20);
+        li {
+          a {
+            color: $darkgrey;
+            &:hover {
+              text-decoration: underline solid $darkgrey;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    &:hover {
+      cursor: pointer;
+    }
+    display: flex;
+    align-items: center;
+    img {
+      height: 27px;
+    }
+  }
+  .hamburger {
+    display: flex;
+    align-items: center;
+    @include breakpoints("medium") {
+      display: none;
+    }
+  }
+  .menu {
+    position: absolute;
+    background-color: $black;
+    width: 100%;
+    padding: rem(40);
+    top: 9%;
+    transform: translateX(-120%);
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      font-size: rem(25);
+      gap: rem(30);
+      a {
+        color: $white;
+      }
+    }
+  }
+}

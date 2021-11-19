@@ -1,0 +1,13 @@
+@use "../util/" as *;
+@use "../globals/typography.scss" as *;
+
+button {
+  border: none;
+  background-color: $lightgrey;
+  padding: rem(15);
+  border-radius: rem(10);
+  cursor: pointer;
+  font-family: $font;
+  color: $darkgrey;
+  font-weight: $medium;
+}

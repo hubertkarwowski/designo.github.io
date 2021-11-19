@@ -1,0 +1,70 @@
+@use "../util/" as *;
+.card1 {
+  background-image: url("../../../assets/home/mobile/image-web-design.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: $white;
+  border-radius: rem(15);
+  width: 100%;
+  &:hover {
+    background-color: $peach;
+  }
+  .text {
+    padding: rem(80) 0;
+    h2 {
+      font-size: rem(36);
+    }
+  }
+  @include breakpoints("medium") {
+    background-image: url("../../../assets/home/tablet/image-web-design.jpg");
+  }
+  @include breakpoints("large") {
+    background-image: url("../../../assets/home/desktop/image-web-design-small.jpg");
+  }
+}
+.card2 {
+  background-image: url("../../../assets/home/mobile/image-app-design.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: $white;
+  border-radius: rem(15);
+  width: 100%;
+  .text {
+    padding: rem(80) 0;
+    h2 {
+      font-size: rem(36);
+    }
+  }
+  @include breakpoints("medium") {
+    background-image: url("../../../assets/home/tablet/image-app-design.jpg");
+  }
+  @include breakpoints("large") {
+    background-image: url("../../../assets/home/desktop/image-app-design.jpg");
+  }
+}
+.card3 {
+  background-image: url("../../../assets/home/mobile/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: $white;
+  border-radius: rem(15);
+  width: 100%;
+  .text {
+    padding: rem(80) 0;
+    h2 {
+      font-size: rem(30);
+    }
+  }
+  @include breakpoints("medium") {
+    background-image: url("../../../assets/home/tablet/image-graphic-design.jpg");
+  }
+  @include breakpoints("large") {
+    background-image: url("../../../assets/home/desktop/image-graphic-design.jpg");
+  }
+}
