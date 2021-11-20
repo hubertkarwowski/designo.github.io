@@ -16,7 +16,11 @@
     h2 {
       font-size: rem(36);
     }
+    a {
+      color: $white;
+    }
   }
+
   @include breakpoints("medium") {
     background-image: url("../../../assets/home/tablet/image-web-design.jpg");
   }
@@ -37,6 +41,9 @@
     padding: rem(80) 0;
     h2 {
       font-size: rem(36);
+    }
+    a {
+      color: $white;
     }
   }
   @include breakpoints("medium") {
@@ -59,6 +66,9 @@
     padding: rem(80) 0;
     h2 {
       font-size: rem(30);
+    }
+    a {
+      color: $white;
     }
   }
   @include breakpoints("medium") {

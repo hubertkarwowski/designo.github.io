@@ -1,0 +1,9 @@
+@use "../util/" as *;
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  @include breakpoints("large") {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
