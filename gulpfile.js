@@ -59,6 +59,6 @@ exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
 // Build Gulp Task
 exports.build = series(scssTask, jsTask);
 //push to gh-pages
-gulp.task("deploy", ["build"], function () {
-  return gulp.src("./dist/**/*").pipe(deploy());
-});
+// gulp.task("deploy", ["build"], function () {
+//   return gulp.src("./dist/**/*").pipe(deploy());
+// });
