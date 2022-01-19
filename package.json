@@ -1,10 +1,11 @@
 {
   "name": "designo",
   "version": "1.0.0",
-  "description": "",
+  "description": "git",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,9 @@
     "gulp-sass": "^5.0.0",
     "gulp-shell": "^0.8.0",
     "gulp-terser": "^2.1.0",
+    "netlify-cli": "^8.9.7",
     "postcss": "^8.3.11",
     "sass": "^1.43.4"
-  }
+  },
+  "devDependencies": {}
 }
